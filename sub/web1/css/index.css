@@ -1,0 +1,302 @@
+@charset"UTF-8";
+@import url("https://p.typekit.net/p.css?s=1&k=xmj5mmq&ht=tk&f=6839.6840&a=120562353&app=typekit&e=css");
+
+@font-face {
+font-family:"cooper-black-std";
+src:url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+/* Noto Sans 똑바로 다운 못 받음 */
+@import url("https://use.typekit.net/xmj5mmq.css");
+
+/* *************************          header          ************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    font-family: noto-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    background-color: #0f121a;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+
+/* *************************         header        ************************* */
+
+header {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: transparent;
+    border-bottom: thin solid rgba(238, 238, 238, 0.658);
+}
+
+header > h1 {
+    width: 75px;
+    color: red;
+    font-size: 36px;
+    background-color: transparent;
+}
+
+header .manu01 {}
+header .manu01 > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .manu01 > ul li {}
+header .manu01 > ul li a {
+    padding: 0 50px;
+    font-size: 21px;
+    background-color: transparent;
+}
+header .manu01 > ul li:nth-of-type(1) a {
+    font-weight: 550;
+    position: relative;
+}
+header .manu01 > ul li:nth-of-type(1) a::after {
+    content: '';
+    width: 45%;
+    height: 3.5px;
+    display: block;
+    position: absolute;
+    bottom: -130%;
+    background-color: red;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .right_menu {
+    display: flex;
+    align-items: center;
+}
+header .right_menu > li {
+    margin-left: 35px;
+}
+header .right_menu > li a {}
+
+/* *************************       main_visaul      ************************* */
+
+.main_visual {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_visual .description {
+    position: absolute;
+    bottom: 246px;
+    left: 175px;
+}
+.main_visual .description > h6 {
+    font-size: 18px;
+    background-color: #edac3a;
+    width: 50px;
+    height: 30px;
+    border-radius: 7px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.main_visual .description > h5 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.main_visual .description > h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 53px;
+}
+.main_visual .description > p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+.main_visual .description .buttons {
+    display: flex;
+    align-items: center;
+}
+.main_visual .description .buttons > li {
+    margin-right: 25px;
+    font-size: 22px;
+}
+.main_visual .description .buttons > li a {}
+.main_visual .description .buttons > li:nth-of-type(1) a {
+    background-color: red;
+    border-radius: 50px;
+    display: block;
+    width: 185px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+}
+.main_visual .description .buttons > li:nth-of-type(2) a {
+    background-color: gray;
+    border-radius: 50px;
+    display: block;
+    width: 105px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.main_visual .menu02 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 175px;
+    background-color: rgba(122, 122, 122, 0.089);
+}
+.main_visual .menu02 > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_visual .menu02 > ul li {}
+.main_visual .menu02 > ul li a {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* *************************       cont01      ************************* */
+
+.cont01 {}
+
+.cont01 .menu03 {
+    padding: 20px 175px;
+}
+.cont01 .menu03 > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont01 .menu03 > ul li {}
+.cont01 .menu03 > ul li a {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cont01 .movies {
+    margin: 80px 39px 0;
+    display: flex;
+    align-items: center;
+}
+
+.cont01 .movies > .slider_left {}
+.cont01 .movies > .slider_left > a {}
+.cont01 .movies > .slider_left > a img {
+    width: 20px;
+    height: 37px;
+    object-fit: cover;
+}
+
+.cont01 .movies .list {
+    display: flex;
+    width: 1720px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.cont01 .movies .list .poster {}
+.cont01 .movies .list .poster > a {}
+.cont01 .movies .list .poster > a img {}
+.cont01 .movies .list .poster .poster_text {}
+.cont01 .movies .list .poster .poster_text > h4 {
+    font-size: 20px;
+}
+.cont01 .movies .list .poster .poster_text > p {
+    font-size: 16px;
+}
+.cont01 .movies .list .poster .poster_text > div {}
+.cont01 .movies .list .poster .poster_text > div a {
+    font-size: 16px;
+}
+.cont01 .movies .list .poster .poster_text > div ul {}
+.cont01 .movies .list .poster .poster_text > div ul li {}
+
+.cont01 .movies > .slider_right {}
+.cont01 .movies > .slider_right > a {}
+.cont01 .movies > .slider_right > a img {
+    width: 20px;
+    height: 37px;
+    object-fit: cover;
+}
+
+/* *************************       cont02      ************************* */
+
+.cont02 {}
+
+.cont02 > h1 {}
+
+.cont02 .popcorn {}
+
+.cont02 .popcorn .popcorn_list {}
+.cont02 .popcorn .popcorn_list > a {}
+.cont02 .popcorn .popcorn_list > a img {}
+.cont02 .popcorn .popcorn_list > a h4 {}
+.cont02 .popcorn .popcorn_list > p {}
+
+/* *************************       cont03      ************************* */
+
+.cont03 {}
+.cont03 .cont03_title {}
+.cont03 .cont03_title > h2 {}
+
+.cont03 .food_list {}
+.cont03 .food_list > .left_slider {}
+.cont03 .food_list > .left_slider > a {}
+.cont03 .food_list > .left_slider > a img {}
+
+.cont03 .food_list .food01 {}
+.cont03 .food_list .food01 > a {}
+.cont03 .food_list .food01 > a img {}
+.cont03 .food_list .food01 > a h4 {}
+.cont03 .food_list .food01 > a .food_text {}
+.cont03 .food_list .food01 > a .food_text > h5 {}
+.cont03 .food_list .food01 > a .food_text > p {}
+
+.cont03 .food_list > .right_slider {}
+.cont03 .food_list > .right_slider > a {}
+.cont03 .food_list > .right_slider > a img {}
+
+/* *************************       cont04      ************************* */
+
+.cont04 {}
+
+.cont04 .img_list {}
+.cont04 .img_list .image01 > a {}
+.cont04 .img_list .image01 > a img {}
+.cont04 .img_list .image01 > a .img_text {}
+.cont04 .img_list .image01 > a .img_text > h4 {}
+.cont04 .img_list .image01 > a .img_text > p {}
+
+/* *************************        footer       ************************* */
+
+footer {}
+footer > p {}
